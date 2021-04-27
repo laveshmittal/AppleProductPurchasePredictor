@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: none;
+            color: #000000;
+        }
+        
+        .carousel-indicators li {
+            border-color: #000000;
+        }
+        
+        .carousel {
+            width: 400px;
+            height: 500px;
+        }
+        
+        .carousel-indicators li.active {
+            background-color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="{%static 'app1/white_apple_logo3.jpg'%}" width="40" height="30" class="d-inline-block align-top" alt=""> Apple Products Sale Prediction
+        </a>
+
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">DASHBOARD</li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row" style=".row::after {content: '';clear: both;display: table; }">
+            <div class="column" style="float: left;width: 45.33%;padding: 5px;">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{%static 'app1/p1.jpeg'%}" alt="iPhone" style="width:100%; height:50%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{%static 'app1/p2.jpg'%}" alt="Macbook" style="width:100%; height:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="{%static 'app1/p3.jpg'%}" alt="Watch" style="width:100%; height:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="{%static 'app1/p4.jpg'%}" alt="iPad" style="width:100%; height:100%;">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="column" style="float: right;width: 30.33%;padding: 5px;">
+                <div>
+                    <h1 align="middle">Product Purchase Predictions </h1>
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    <a href="/app1/predictfunc" class="alert-link">Check if user will purchase a iPhone</a>
+                </div>
+                <div align="middle">
+                    <button onclick="window.location.href='/app1/'" class="btn btn-dark">BACK</button>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+        <footer class="container-fluid text-center">
+            <a href="/" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+
+</body>
+
+</html>
